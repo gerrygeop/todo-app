@@ -14,8 +14,8 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className={`${inter.className} bg-slate-900 text-slate-50`}>
 				<nav className="p-4 border-b border-slate-700">
-					<ul className="max-w-3xl mx-auto flex items-center gap-x-4">
-						<NavLink href="/">Home</NavLink>
+					<ul className="max-w-3xl mx-auto flex items-center gap-x-6">
+						<NavLink href="/">+ New</NavLink>
 						<NavLink href="/todo">Todo</NavLink>
 					</ul>
 				</nav>

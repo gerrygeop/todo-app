@@ -46,8 +46,7 @@ export default function FormTodo() {
 					<Label htmlFor="time">Time</Label>
 					<Input type="time" name="time" />
 				</div>
-				<div className="my-4 border-t border-slate-200"></div>
-				<div className="col-span-full flex items-center justify-end gap-x-4">
+				<div className="col-span-full flex items-center justify-end gap-x-4 mt-6">
 					<Button type="submit">Save</Button>
 				</div>
 			</div>

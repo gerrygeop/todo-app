@@ -15,7 +15,7 @@ export default function Card({ todoList, className }) {
 	}
 	return (
 		<div
-			className={`relative group bg-slate-100 px-4 py-5 overflow-hidden border shadow rounded-md hover:bg-slate-200 hover:border-cyan-500 hover:-translate-y-1 transition duration-150 ${className}`}
+			className={`relative group bg-slate-100 dark:bg-slate-700/30 px-4 py-5 overflow-hidden border dark:border-slate-700 shadow rounded-md hover:bg-slate-200 dark:hover:bg-slate-700/60 hover:border-cyan-500 hover:-translate-y-1 transition duration-150 ${className}`}
 		>
 			<button
 				type="button"
@@ -37,9 +37,9 @@ export default function Card({ todoList, className }) {
 					/>
 				</svg>
 			</button>
-			<Link href={`/todo/${todoList.id}`} className="w-full h-full">
-				<p className="text-slate-800">{todoList.todo}</p>
-				<span className="text-slate-600 text-sm italic">
+			<Link href={`/todo/${todoList.id}`}>
+				<p className="text-slate-800 dark:text-white">{todoList.todo}</p>
+				<span className="text-slate-600 dark:text-slate-300 text-sm italic">
 					-- {todoList.date}
 				</span>
 			</Link>

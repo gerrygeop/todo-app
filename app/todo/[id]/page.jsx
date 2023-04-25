@@ -16,9 +16,9 @@ export default async function DetailTodo({ params }) {
 			<div className="max-w-3xl mx-auto py-8">
 				<h1 className="font-semibold text-lg mb-8">Hellow 👋</h1>
 
-				<div className="bg-slate-100 px-4 py-5 overflow-hidden border shadow rounded-md">
-					<p className="text-slate-800">{todoList.todo}</p>
-					<span className="text-slate-600 text-sm italic">
+				<div className="bg-slate-100 dark:bg-slate-700/30 px-4 py-5 overflow-hidden border dark:border-slate-700 shadow rounded-md">
+					<p className="text-slate-800 dark:text-white">{todoList.todo}</p>
+					<span className="text-slate-600 dark:text-slate-300 text-sm italic">
 						-- {todoList.date}
 					</span>
 				</div>
