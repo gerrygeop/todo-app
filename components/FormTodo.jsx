@@ -2,8 +2,11 @@
 import Button from "./Button";
 import Input from "./Input";
 import Label from "./Label";
+import { useRouter } from "next/navigation";
 
 export default function FormTodo() {
+	const router = useRouter();
+
 	async function handleOnSubmit(e) {
 		e.preventDefault();
 		const formData = new FormData(e.target);
@@ -22,6 +25,8 @@ export default function FormTodo() {
 		const data = await res.json();
 		console.log(data);
 		e.target.reset();
+		router.refresh();
+		router.push("/todo");
 	}
 
 	return (
